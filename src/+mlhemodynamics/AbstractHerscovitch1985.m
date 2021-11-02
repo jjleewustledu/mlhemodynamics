@@ -1,5 +1,7 @@
 classdef AbstractHerscovitch1985 < mlpipeline.AbstractDataBuilder
-	%% ABSTRACTHERSCOVITCH1985  
+	%% ABSTRACTHERSCOVITCH1985 is DEPRECATED.  
+    %  Prefer mlpet.AbstractHerscovitch1895 or mloxygen.QuadraticNumeric.
+    
     %  See also:
     %  1. Herscovitch P, Mintun MA, Raichle ME (1985) Brain oxygen utilization measured with oxygen-15 radiotracers and 
     %  positron emission tomography: generation of metabolic images. J Nucl Med 26(4):416?417.
