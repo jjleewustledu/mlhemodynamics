@@ -1,5 +1,6 @@
 classdef HemodynamicsModel < mlkinetics.AbstractKineticsModel
-	%% HEMODYNAMICSMODEL  
+	%% HEMODYNAMICSMODEL uses strategy design patterns to facilitate use of 
+    %  nonlinear regression, simulated annealing, nested sampling, HMC.
 
 	%  $Revision$
  	%  was created 12-Dec-2017 16:38:24 by jjlee,
