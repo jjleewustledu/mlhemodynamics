@@ -425,7 +425,9 @@ classdef AbstractHerscovitch1985 < mlpipeline.AbstractDataBuilder
                 sessd = this.sessionData;
                 sessd.tracer = 'FDG';
                 this.mask_ = sessd.aparcAsegBinarized('typ', 'mlfourd.ImagingContext');
-                this.sessionData.nifti_4dfp_ng(this.mask_.fqfp);
+                ic = mlfourd.ImagingContext2(strcat(this.mask_.fqfp, '.4dfp.hdr'));
+                ic.selectNiftiTool();
+                ic.save();
             end
         end
     end
