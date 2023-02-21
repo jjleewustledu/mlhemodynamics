@@ -128,7 +128,7 @@ classdef TSC < mlpet.AbstractWellData
                 files.tscFqfilename, files.ecatFqfilename, files.dtaFqfilename, files.maskFqfilename);
         end
         function this = loadSessionData(sessDat)
-            assert(isa(sessDat, 'mlpipeline.SessionData'));
+            assert(isa(sessDat, 'mlpipeline.ISessionData'));
             this = mlpet.TSC(sessDat.tsc_fqfn, sessDat.pet_fqfn, sessDat.dta_fqfn, sessDat.mask_fqfn);
         end
         function msk  = makeMask(maskFqfn)
